@@ -71,10 +71,25 @@ a {
     border: none;
     border-radius: 5px;
     background-color: #1d365e;
+/*    background-color: coral;*/
     color: #b7cbd5;
     padding: 20px;
     font-size: 13px;
     font-weight: 100;
+    cursor: pointer;
+}
+
+.btn-pay:hover {
+    background-color: gray;
+/*    순서중요함 hofa..호빠 ㅋ*/
+}
+
+.btn-pay:focus {
+    background-color: black;
+}
+
+.btn-pay:active {
+    background-color: darkgray;
 }
 
 .cart-header {
@@ -110,3 +125,18 @@ a {
 
 
 
+
+.link-edit {
+    float: left; 
+    padding-top: 5px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link-edit:link {
+    color: #1d365e;
+}
+
+.link-edit:visited {
+    color: gray;
+}
