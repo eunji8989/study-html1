@@ -1,3 +1,11 @@
+@font-face {
+    font-family: '나눔스퀘어';
+    src: url('../font/NanumSquareAcB.woff');
+}
+
+body {
+    font-family: '나눔스퀘어';
+}
 
 .main-background {
     width: 100%;
@@ -41,7 +49,7 @@
     background: white;
     border: none;
     position: relative;
-    
+
 }
 
 .main-box {
@@ -57,17 +65,17 @@
 }
 
 .contact-wrapper {
-    width: 100%;
+    width: 80%;
     max-width: 600px;
-    box-sizing: border-box;
     margin: auto;
     padding: 30px;
     background-color: white;
+    box-sizing: border-box;
 }
 
 .contact-header {
     width: 100%;
-/*    padding: 20px;*/
+    /*    padding: 20px;*/
     font-size: 25px;
     font-weight: 570;
     margin-top: -30px;
@@ -90,7 +98,7 @@
     padding-right: 15px
 }
 
-input::placeholder{
+input::placeholder {
     color: lightgray
 }
 
@@ -117,6 +125,49 @@ input::placeholder{
     margin: auto;
 }
 
+.nav-item {
+    display: flex;
+    width: 100px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    padding: 0;
+}
 
+.nav-container {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    padding: 7px;
+}
 
+.main-menu {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
+.main-menu div {
+    text-align: center;
+    float: left;
+    width: 25%;
+}
+
+@media screen and (max-width: 1200px) {
+    .main-menu {
+        max-width: 600px;
+    }
+    .main-menu div {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-menu div {
+        width: 100%;
+    }
+}
